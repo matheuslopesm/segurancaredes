@@ -20,7 +20,7 @@ export class SignUpController implements IController {
             await this.signUpUseCase.execute({ email, name, password });
 
             return {
-                statusCode: 400,
+                statusCode: 200,
                 body: null,
             }
         } catch (error) {
